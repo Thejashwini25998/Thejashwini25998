@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="login-page">
+        <div class="form">
+            <form class="form-control" onsubmit="return myfun(this);">
+                <h3>Create Account</h3>
+                <input type="text" placeholder="Full name" />
+                <input type="text" placeholder="username" id="username" value="" />
+                <input type="text" placeholder="phone number" value="" id="phonenumber" maxlength="10" pattern="\d{10}"
+                    title="please enter 10 digit valid number" />
+                <span id="messages"></span>
+                <input type="text" placeholder="password" value="" id="password" name="password"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}"
+                    title="must contain atleast one number and  one uppercase and lower case letter, and atleast 6 to 20 characters" />
+                <input type="password" placeholder=" confirm password" id="confirmpassword" value="" />
+
+                <button a href="#" class="style_button1" onClick="return myfun(this);"> Submit</button>
+                <p class="error-message"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
