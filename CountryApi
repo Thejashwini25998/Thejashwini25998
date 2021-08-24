@@ -30,13 +30,13 @@ function DataFetching(){
                                     <th>Region </th>
                                     </tr>
                                     </thead>
-                                    <thead>
+                                    <tbody>
                                         <td>{country.name}</td>
                                         <td>{country.capital}</td>
                                         <td>{country.callingCodes}</td>
                                         <td>{country.population}</td>
                                         <td>{country.region}</td>
-                                    </thead>
+                                    </tbody>
                                 
                                     </table>)
                 }
